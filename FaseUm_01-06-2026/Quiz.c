@@ -4,7 +4,8 @@
 int main(){
 	
 	char resposta;
-	
+	int acertos = 0;
+    int erros = 0;
 
 	printf("===== QUIZ =====");
 	//1
@@ -19,9 +20,11 @@ int main(){
 
 	if(resposta == 'a'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
 	//2
@@ -36,9 +39,11 @@ int main(){
 
 	if(resposta == 'd'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
 	//3
@@ -53,16 +58,18 @@ int main(){
 
 	if(resposta == 'c'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
   //4
   	printf("\n4 - Em que continente fica o Egito?\n");
 	printf("\na) Asia\n");
 	printf("b) Africa\n");
-	printf("c) Eurapa\n");
+	printf("c) Europa\n");
 	printf("d) Oceania\n");
 
 	printf("\nInsira sua resposta: ");
@@ -70,9 +77,11 @@ int main(){
 
 	if(resposta == 'b'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
   
 	//5
@@ -87,14 +96,16 @@ int main(){
 
 	if(resposta == 'c'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
   	//6
   	printf("\n6 - Quem pintou a obra Mona Lisa?\n");
-	printf("\na) Vicent Van Gogh\n");
+	printf("\na) Vincent Van Gogh\n");
 	printf("b) Pablo Picasso\n");
 	printf("c) Michelangelo\n");
 	printf("d) Leonardo da Vinci\n");
@@ -104,9 +115,11 @@ int main(){
 
 	if(resposta == 'd'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
 	//7
@@ -121,9 +134,11 @@ int main(){
 
 	if(resposta == 'd'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
   
   //8
@@ -138,9 +153,11 @@ int main(){
 
 	if(resposta == 'b'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
 	//9
@@ -155,9 +172,11 @@ int main(){
 
 	if(resposta == 'c'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
 	//10
@@ -172,12 +191,34 @@ int main(){
 
 	if(resposta == 'c'){
     	printf("Resposta correta!\n");
+    	 acertos++;
 	}
 	else{
     	printf("Resposta errada!\n");
+    	 erros++;
 	}
 	
-	system("pause");
-  
-  return 0;
+	
+    printf("\nRESULTADO FINAL\n");
+   
+    printf("Voce acertou %d\n", acertos, "perguntas");
+    printf("Voce errou %d\n", erros, "perguntas");
+    printf("Sua porcentagem de acertos eh de %.0f%%\n", (acertos * 100.0) / 10);
+
+    if(acertos == 10){
+        printf("Desempenho: Albert Einstein eh voce?!\n");
+    }
+    else if(acertos >= 7){
+        printf("Desempenho: Queria um filho esperto assim.!\n");
+    }
+    else if(acertos >= 5){
+        printf("Desempenho: Por pouco, ein!\n");
+    }
+    else{
+        printf("Desempenho: Melhora ai, na moral!\n");
+    }
+
+    system("pause");
+    return 0;
 }
+
