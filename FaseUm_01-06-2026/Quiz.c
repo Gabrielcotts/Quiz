@@ -18,7 +18,8 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'a'){
+
+	if(resposta == 'a'|| resposta == 'A'){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -37,7 +38,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'd'){
+	if(resposta == 'd' || resposta == 'D' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -56,7 +57,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'c'){
+	if(resposta == 'c'|| resposta == 'C' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -75,7 +76,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'b'){
+	if(resposta == 'b'|| resposta == 'B' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -94,7 +95,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'c'){
+	if(resposta == 'c'|| resposta == 'C' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -113,7 +114,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'd'){
+	if(resposta == 'd'|| resposta == 'D' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -132,7 +133,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'd'){
+	if(resposta == 'd'|| resposta == 'D' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -151,7 +152,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'b'){
+	if(resposta == 'b'|| resposta == 'B' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -170,7 +171,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'c'){
+	if(resposta == 'c'|| resposta == 'C' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -189,7 +190,7 @@ int main(){
 	printf("\nInsira sua resposta: ");
 	scanf(" %c", &resposta);
 
-	if(resposta == 'c'){
+	if(resposta == 'c'|| resposta == 'C' ){
     	printf("Resposta correta!\n");
     	 acertos++;
 	}
@@ -221,4 +222,5 @@ int main(){
     system("pause");
     return 0;
 }
+
 
