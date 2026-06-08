@@ -11,3 +11,7 @@ Portanto, optamos por deixar o usuário prosseguir mesmo após o erro e preferim
 #### Dia 02/06/2026
 Após uma conferência, percebemos que o usuário poderia responder de forma correta usando letras maiúsculas, mas o sistema retornaria "errado".
 Então fizemos uma validação para que isso não ocorra e a resposta possa ser validada independente se foi respondida com letras minúsculas ou maiúsculas.
+
+
+#### Dia 08/06/2026
+O codigo foi refatorado utilizando structs e vetores, conseguindo armazenar todas as perguntas, alternativas e respsotas em apenas uma estrutura de dados. Eliminando os blocos de printf, scanf e if/else, e substituindo pelo for onde o mesmo vai percorrer automaticamente todas as perguntas.
