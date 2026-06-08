@@ -69,6 +69,7 @@ int Quiz() {
 	int acertos = 0;
 	int erros = 0;
 
+
 	printf("===== Quiz =====\n");
 
 	for (int i = 0; i < TOTAL; i++) {
@@ -94,4 +95,36 @@ int Quiz() {
 	printf("Voce acertou %d perguntas\n", acertos);
 	printf("Voce errou %d perguntas\n", erros);
 	printf("Sua porcentagem de acertos eh de %.0f%%\n", (acertos * 100.0) / TOTAL);
+}
+
+int main() {
+	
+	int opcao;
+	
+	do {
+		printf("==== MENU ====\n");
+		printf("\n1 - Instrucoes\n");
+		printf("2 - Jogar\n");
+		printf("3 - Sair\n");
+		printf("Escolha uma opcao: ");
+		scanf("%d", &opcao);
+		
+		switch(opcao){
+			case 1: 
+			printf("=== INSTRUCOES ===\n");
+			printf("\nResponda as perguntas com a resposta correta\n");
+			printf("Escolha a resposta correta nas alternativas\n");
+			break;
+			
+			case 2:
+			Quiz();
+			break;
+			
+			case 3: 
+			printf("Saindo...\n");
+		}
+	}
+	while(opcao != 3);
+	
+	return 0;
 }
