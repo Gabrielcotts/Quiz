@@ -99,9 +99,11 @@ int Quiz() {
 
 int main() {
 	
-	int opcao;
+	int opcao = 0;
 	
 	do {
+		system("cls");
+		
 		printf("==== MENU ====\n");
 		printf("\n1 - Instrucoes\n");
 		printf("2 - Jogar\n");
