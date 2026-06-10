@@ -15,3 +15,6 @@ Então fizemos uma validação para que isso não ocorra e a resposta possa ser 
 
 #### Dia 08/06/2026
 O codigo foi refatorado utilizando structs e vetores, conseguindo armazenar todas as perguntas, alternativas e respsotas em apenas uma estrutura de dados. Eliminando os blocos de printf, scanf e if/else, e substituindo pelo for onde o mesmo vai percorrer automaticamente todas as perguntas.
+
+#### Dia 10/06/2026
+Ajustamos o código para rodar no Dev-C++, removendo as declarações de variáveis dentro do 'for' e alterando a função 'int quiz()' para 'void quiz()'.
