@@ -11,7 +11,7 @@ typedef struct {
 } Pergunta;
 
 
-int Quiz() {
+void Quiz() {
 	Pergunta quiz[TOTAL] = {
 		{
 			"Qual foi a primeira capital do Brasil?",
@@ -68,11 +68,13 @@ int Quiz() {
 	char resposta;
 	int acertos = 0;
 	int erros = 0;
-
+	int i;
+	
 
 	printf("===== Quiz =====\n");
 
-	for (int i = 0; i < TOTAL; i++) {
+
+	for (i = 0; i < TOTAL; i++) {
 		printf("\n%d - %s\n", i + 1, quiz[i].pergunta);
 		printf("a) %s\n", quiz[i].alternativas[0]);
 		printf("b) %s\n", quiz[i].alternativas[1]);
@@ -81,6 +83,8 @@ int Quiz() {
 
 		printf("\nInsira sua resposta: ");
 		scanf(" %c", &resposta);
+		
+		resposta = toupper(resposta);
 
 		if (resposta == quiz[i].correta) {
 			printf("Resposta correta!\n");
