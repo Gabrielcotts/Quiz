@@ -18,3 +18,6 @@ O codigo foi refatorado utilizando structs e vetores, conseguindo armazenar toda
 
 #### Dia 10/06/2026
 Ajustamos o código para rodar no Dev-C++, removendo as declarações de variáveis dentro do 'for' e alterando a função 'int quiz()' para 'void quiz()'.
+
+#### Dia 19/06/2026
+Ao reler o material, percebemos que não estávamos seguindo 100% dos critérios do jogo. Portanto, alteramos a regra e a validação do código. Agora, quando o jogador perde, ele deve tentar novamente do início, em vez de apenas continuar seguindo com as tentativas. Por fim, após organizar e refatorar o código, notei que faltava um elemento para aumentar a imersão. Para resolver isso, implementei uma função que registra o histórico de tentativas do usuário.
